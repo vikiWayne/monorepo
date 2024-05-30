@@ -1,5 +1,5 @@
 import { Box, useTheme } from "@mui/material";
-import logoGif from "../../assets/images/PW.gif";
+// import logoGif from "../../assets/images/PW.gif";
 import { rem } from "../../utils/themeUtils";
 
 function Loader() {
@@ -23,7 +23,7 @@ function Loader() {
         },
       }}
     >
-      <img src={logoGif} />
+      <img alt="loader" src={""} />
     </Box>
   );
 }

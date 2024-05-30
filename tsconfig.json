@@ -2,17 +2,19 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ESNext",
-    "skipLibCheck": true,
-
-    "moduleResolution": "Bundler",
-    "allowArbitraryExtensions": true,
-
     "esModuleInterop": true,
-
     "forceConsistentCasingInFileNames": true,
-
-    /* Type Checking */
     "strict": true,
-    "jsx": "react-jsx"
+    "skipLibCheck": true,
+    "allowArbitraryExtensions": true,
+    "jsx": "react-jsx",
+    "rootDir": ".",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true
   }
 }
