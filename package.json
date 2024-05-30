@@ -1,7 +1,7 @@
 {
   "name": "viki",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "private": "true",
   "workspaces": [
     "packages/*"
@@ -12,5 +12,8 @@
   "keywords": [],
   "author": "Vaisakh",
   "license": "ISC",
-  "description": "A testing lib for UI"
+  "description": "A testing lib for UI",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
 }
