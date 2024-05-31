@@ -1,10 +1,8 @@
-import { Box, useTheme } from "@mui/material";
-// import logoGif from "../../assets/images/PW.gif";
+import { Box } from "@mui/material";
+import logoGif from "../../assets/images/PW.gif";
 import { rem } from "../../utils/themeUtils";
 
 function Loader() {
-  const theme = useTheme();
-
   return (
     <Box
       sx={{
@@ -13,7 +11,7 @@ function Loader() {
         borderRadius: rem(8),
         overflow: "hidden",
         position: "relative",
-        background: theme.genericColors.white,
+        background: "common.white",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -23,7 +21,7 @@ function Loader() {
         },
       }}
     >
-      <img alt="loader" src={""} />
+      <img alt="loader" src={logoGif} />
     </Box>
   );
 }

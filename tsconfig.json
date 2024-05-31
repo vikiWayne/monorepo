@@ -17,5 +17,5 @@
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
   },
-  "include": ["src", "appTheme.types.ts"]
+  "include": ["src/*", "appTheme.types.ts"]
 }
