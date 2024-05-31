@@ -1,13 +1,4 @@
-export type IconTypes =
-  | "alert-success"
-  | "alert-error"
-  | "alert-info"
-  | "alert-warning"
-  | "checkbox-default"
-  | "checkbox-checked"
-  | "radio-default"
-  | "radio-checked"
-  | "fallbackImage";
+import { IconTypes, SVGIconProps } from "./icons.types";
 
 const getSvg = (name: IconTypes): JSX.Element => {
   switch (name) {
@@ -118,9 +109,9 @@ const getSvg = (name: IconTypes): JSX.Element => {
           <path
             d="M6.12506 10.3916L8.80434 13.0707L14.0001 7.875"
             stroke="var(--tickColor)"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       );
@@ -163,25 +154,26 @@ const getSvg = (name: IconTypes): JSX.Element => {
           <path
             d="M5.25 8.90707L7.54652 11.2035L12 6.75"
             stroke="var(--radioTick)"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       );
 
-      case "fallbackImage":
+    case "fallbackImage":
       return (
         <svg viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.1 0.5H2.9C1.574 0.5 0.5 1.574 0.5 2.9V17.3C0.5 18.626 1.574 19.7 2.9 19.7H22.1C23.426 19.7 24.5 18.626 24.5 17.3V2.9C24.5 1.574 23.426 0.5 22.1 0.5ZM10.1 5.3C10.7624 5.3 11.3 5.8376 11.3 6.5C11.3 7.1624 10.7624 7.7 10.1 7.7C9.4376 7.7 8.9 7.1624 8.9 6.5C8.9 5.8376 9.4376 5.3 10.1 5.3ZM20.9 16.1H4.1L8.2988 10.7012L11.3 14.312L15.5 8.9012L20.9 16.1Z" fill="currentColor"/>
+          <path
+            d="M22.1 0.5H2.9C1.574 0.5 0.5 1.574 0.5 2.9V17.3C0.5 18.626 1.574 19.7 2.9 19.7H22.1C23.426 19.7 24.5 18.626 24.5 17.3V2.9C24.5 1.574 23.426 0.5 22.1 0.5ZM10.1 5.3C10.7624 5.3 11.3 5.8376 11.3 6.5C11.3 7.1624 10.7624 7.7 10.1 7.7C9.4376 7.7 8.9 7.1624 8.9 6.5C8.9 5.8376 9.4376 5.3 10.1 5.3ZM20.9 16.1H4.1L8.2988 10.7012L11.3 14.312L15.5 8.9012L20.9 16.1Z"
+            fill="currentColor"
+          />
         </svg>
       );
     default:
       return <svg />;
   }
 };
-
-export type SVGIconProps = { name: IconTypes };
 
 export const SVGIcon = (props: SVGIconProps) => {
   return getSvg(props.name);
