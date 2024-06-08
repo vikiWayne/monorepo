@@ -16,5 +16,6 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
-  }
+  },
+  "include": ["src/*", "appTheme.types.ts"]
 }

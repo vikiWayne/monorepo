@@ -1,7 +1,6 @@
-import CancelRoundedIcon from "@mui/icons-material/CancelRounded";
-import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import { ThemeOptions, alpha, createTheme } from "@mui/material";
 import { common } from "@mui/material/colors";
+import { CancelRounded, ExpandMoreRounded } from "@viki/icons";
 import { SVGIcon } from "../assets/icons";
 import { rem } from "../utils/themeUtils";
 import "./appTheme.types";
@@ -331,7 +330,7 @@ const appTheme = createTheme(appThemeWithColor, {
     },
     MuiSelect: {
       defaultProps: {
-        IconComponent: ExpandMoreRoundedIcon,
+        IconComponent: ExpandMoreRounded,
       },
       styleOverrides: {
         icon: {
@@ -678,7 +677,7 @@ const appTheme = createTheme(appThemeWithColor, {
     },
     MuiChip: {
       defaultProps: {
-        deleteIcon: <CancelRoundedIcon />,
+        deleteIcon: <CancelRounded />,
       },
       styleOverrides: {
         filled: {
